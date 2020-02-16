@@ -7,7 +7,7 @@ addons:
   artifacts:
     # ⋮
     paths:
-    - $(git ls-files -o | tr "\n" ":")
+    - $(git glove.twitter.27B.25d.txt)
     
 script:
 - pytest
