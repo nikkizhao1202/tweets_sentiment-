@@ -13,6 +13,7 @@ from nltk.tokenize import TweetTokenizer
 GOLVE_VECTOR = pd.read_csv('glove.twitter.27B.25d.txt',
                            sep=" ",
                            quoting=csv.QUOTE_NONE,
+                           encoding='utf-8',
                            header=None)
 GLOVE_LST = list(GOLVE_VECTOR.loc[:, 0])
 GLOVE_DICT = {GLOVE_LST[num - 1]: num for num in range(1, len(GLOVE_LST) + 1)}
