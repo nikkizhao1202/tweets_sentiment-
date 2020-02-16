@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 from nltk.tokenize import TweetTokenizer
 
-GOLVE_VECTOR = pd.read_csv('~/glove.twitter.27B.25d.txt',
+GOLVE_VECTOR = pd.read_csv('glove.twitter.27B.25d.txt',
                            sep=" ",
                            quoting=csv.QUOTE_NONE,
                            encoding='utf-8',
