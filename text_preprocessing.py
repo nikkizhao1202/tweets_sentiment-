@@ -24,7 +24,7 @@ class TextPreprocessing():
     '''
     preprocessing data
     '''
-    def __init__(self, text, max_length_tweets=20, max_length_dictionary=None):
+    def __init__(self, text, max_length_tweets=20, max_length_dictionary=100000):
         self.text = text
         self.max_length_tweets = max_length_tweets
         self.max_length_dictionary = max_length_dictionary
