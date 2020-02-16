@@ -66,7 +66,8 @@ class TextPreprocessing():
         text_token = self.tokenize_text()
         tokens = []
         if self.max_length_dictionary:
-            glove_dict = dict(itertools.islice(GLOVE_DICT.items(), self.max_length_dictionary))
+            glove_dict = dict(
+                itertools.islice(GLOVE_DICT.items(), self.max_length_dictionary))
         glove_dict = GLOVE_DICT
         for token in text_token:
             if glove_dict.get(token):
